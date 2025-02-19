@@ -111,7 +111,7 @@ nav ul li a:hover {
 
 .read-more {
     text-decoration: none;
-    color: var(--secondary-color);
+    color: #8b4513; /* Коричневый цвет для текста */
     font-weight: bold;
     transition: color 0.3s ease;
 }
