@@ -7,8 +7,8 @@
 
 /* Цветовые переменные */
 :root {
-    --primary-color: #ff00ff; /* Фуксия */
-    --secondary-color: #dc143c; /* Малиновый */
+    --primary-color: #ffcccc; /* Нежно алый */
+    --secondary-color: #fff700; /* Лимонный */
     --background-color: #f8f0fc;
     --text-color: #222;
     --accent-color: #ffffff;
@@ -64,7 +64,7 @@ nav ul li a:hover {
     background-color: var(--secondary-color);
     padding: 60px 0;
     text-align: center;
-    color: var(--accent-color);
+    color: #8b4513; /* Коричневый для текста */
 }
 
 .hero h2 {
