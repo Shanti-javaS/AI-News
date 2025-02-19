@@ -1,0 +1,171 @@
+/* Сброс базовых стилей */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Цветовые переменные */
+:root {
+    --primary-color: #ff00ff; /* Фуксия */
+    --secondary-color: #dc143c; /* Малиновый */
+    --background-color: #f8f0fc;
+    --text-color: #222;
+    --accent-color: #ffffff;
+}
+
+/* Основные стили */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+/* Блок-герой */
+.hero {
+    background-color: var(--secondary-color);
+    padding: 60px 0;
+    text-align: center;
+    color: var(--accent-color);
+}
+
+.hero h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+/* Новости */
+.news {
+    padding: 40px 0;
+    background-color: var(--accent-color);
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.news-item {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-left: 6px solid var(--secondary-color);
+}
+
+.news-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.news-item p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.read-more {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+    color: #b2002d;
+}
+
+/* Кнопки сортировки */
+.sort-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.sort-buttons button {
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.sort-buttons button:hover {
+    background-color: #c000c0;
+    transform: scale(1.05);
+}
+
+/* Подвал */
+footer {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .news-item h3 {
+        font-size: 1.5rem;
+    }
+}
